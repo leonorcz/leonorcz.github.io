@@ -6,29 +6,47 @@
         content="IE-Edge" />
         <meta name="viewport"
         content="width=device-width,
-        inicial scale=1.
-        0" />
+        inicial scale=1.0" />
+        
+        <!-- font import -->
+
+        <link 
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"
+        />
+    <link
+    rel="stylesheet" href="./styles/css/index.css"/>
+       
+    <!-- CSS only -->
+
         <title> Leonor Portfolio </title>
     </head>
     <body>
-        <header>
-            <h1> Hello My Name is Leonor Cerezino
-                <br> I'm a Web Developer
+        <header class="header">
+            <div class="header-content">
+            <h1 class="header-title">
+                Hello My Name is <span>Leonor Cerezino</span><br>
+                A Full Stack Developer
             </h1>
+            <a href="#about" class="button button-primary button medium"
+            >Find Out More</a
+            >
+        </div>  
         </header>
         <main>
-            <section class="about">
-                <h2> About Me</h2>
-                <div>
+            <section class="about" id="about">
+                <h2>About Me</h2>
+                <div class="about-content">
                 <img src="assets/img/code.jpg"
                 alt="coding on a computer"
-                width="480"
+                class="about-img"
                 />
-                </p>
+                <div class="about-description">
+                <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Et blanditiis porro adipisci molestiae. Excepturi illo nihil,
                 quis ratione totam repellendus nostrum eveniet perferendis,
                 saepe unde mollitia, ipsum provident maxime corporis.
+                </p>
                 <br>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -36,43 +54,74 @@
                 quis ratione totam repellendus nostrum eveniet perferendis,
                 saepe unde mollitia, ipsum provident maxime corporis.
                 </p>
-                <a href="">View resume</a>
+                <a href="" class="button button-secondary"> View resume </a>
                 </div>
+                </div>
+                <div class="about-quote">
+                <br>
+                <br>
+ <a href="">View resume</a>
                 <blockquote>Dont comment bad code - rewrite it</blockquote>
         <cite>Brian Kernighan</cite>
+        </div>
       </section>
       <section class="Projets">
       <h2>Projects</h2>
-<article><h3> Project Title</h3>
+      <article class="projects-article">
+        <div>
+<article>
+    <h3> Project Title</h3>
 <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit.
 Et blanditiis porro adipisci molestiae. Excepturi illo nihil,
 quis ratione totam repellendus nostrum eveniet perferendis,
 saepe unde mollitia, ipsum provident maxime corporis.
 </p>
-<a href="">Source Code</a>
-<a href="">View Project</a>
-<br>
-<br>
+<a href="" class="button button-primary">Source Code</a>
+<a href="" class="button button-tertiary"> View Project</a>
+</div>
 <img src="assets/img/computer.jpg" alt="project" width="600" />
         </article>
-    </section>
-<section class="contact"></section>
-<h2> Contact</h2>
-<p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Itaque ad laudantium, praesentium sapiente omnis corrupti accusamus repudiandae cum placeat tenetur.
-    </p>
+        <article>
+     <h3>Project Title</h3>
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+        maiores nihil soluta ad at laborum error, quas quaerat quis!
+        Perferendis facilis pariatur libero quas neque magnam quisquam optio
+        quasi itaque
+        </p>
+        <a href="">Source Code</a>
+        <a href="">View Project</a>
+        <img src="assets/img/computer.jpg" alt="project" width="600" />
+          </article>
+        </section>
+        <section class="contact">
+          <h2>Contact</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+        commodi laboriosam fugiat in labore, nobis officiis aut fuga rem
+        architecto porro numquam vero minus quas ipsa voluptatem dignissimos
+        aliquam magni.
+          </p>
     <a href="mailto:leonor.cerezino@gmail.com">let's talk</a>
 </section>
 </main>
-<footer>
-    <ul>
-        <li><a href="">1</a></li>
-        <li><a href="">2</a></li>
-        <li><a href="">3</a></li>
-        <li><a href="">4</a></li>
-    </ul>
-    <p> @2022 - Portfolio Design by Leonor Cerezino</p>
+         <footer class="footer">
+            <ul>
+              <li class="social-item">
+                <a href="" class="social-link github"></a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link linkedin"></a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link youtube"></a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link twitter"></a>
+            </ul>
+      <p> @2022 - Portfolio Design by Leonor Cerezino</p>
+    </ul> 
 </footer>
 </body>
+</html>

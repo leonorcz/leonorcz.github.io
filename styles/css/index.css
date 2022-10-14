@@ -1,0 +1,189 @@
+; :root {
+    --color-text-primary: #002324;
+    --color-text-secondary: #ffff;
+    --color-primary: #6608c5;
+    --color-secondary: #ffff;
+}
+
+/* styles reset */
+* {
+    box-sizing: border-box;
+  }
+
+  body * {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  /* end of styles reset */
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .header-content {
+    max-width: 856px;
+    text-align: center;
+    display:flex
+  }
+
+  .header-title {
+    font-size: 48px;
+    font-weight: 50;
+    line-height: 1.4;
+    color: var(--color-primary);
+}
+
+.header-title span {
+    color: var(--color-primary);
+}
+
+.about {
+  padding: 30px 0;
+    color: var(--color-text-secondary);
+    background-color: var(--color-primary);
+}
+
+@media (min-width: 992px) {
+  .projects-article {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
+.social-link {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.github {
+  background-image: url();
+}
+
+.about-content {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+
+.about-img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.about-description {
+  margin-left: 30px;
+}
+
+.about-quote {
+  text-align: center;
+}
+
+.social-item {
+  display: inline-block;
+  background-color: var(--color-secondary);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.social-link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+  background-repeat: no-repeat;
+}
+
+.github {
+  background-image: url(../../assets/icons/icon-github.png);
+}
+
+.linkedin {
+  background-image: url(../../assets/icons/icon-linkedin.png);
+}
+
+.twitter {
+  background-image: url(../../assets/icons/icon-instagram.png);
+}
+
+.youtube {
+  background-image: url(../../assets/icons/icon-facebook.png);
+}
+
+/* buttons */
+.button {
+    display: inline-block
+    font-size: 14px;
+    font-weight: 500;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 5px;   
+}
+
+.button-primary {
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary); 
+}
+
+.button-primary:hover {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+}
+
+.button-secondary {
+  color: var(--color-secondary);
+  border: 2px solid var(--color-secondary);
+}
+
+.button-secondary:hover {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+}
+
+.button-tertiary {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.button-tertiary:hover {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+}
+
+.button-medium {
+  padding: 15px 20px;
+}
+
+/* end of buttons */
+
+.transition { 
+  all 
+
+transition: 
+0.2s ease-in-out;
+}
