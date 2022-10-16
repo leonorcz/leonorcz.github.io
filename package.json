@@ -1,4 +1,23 @@
 {
+  "name": "leonorcz.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch styles/scss/index.scss styles/css/index.css"
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonorcz/leonorcz.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonorcz/leonorcz.github.io/issues"
+  },
+  "homepage": "https://github.com/leonorcz/leonorcz.github.io#readme",
   "dependencies": {
     "sass": "^1.55.0"
   }

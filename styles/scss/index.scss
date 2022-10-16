@@ -1,47 +1,5 @@
-.button {
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 10px 12px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: all 0.2s ease-in-out;
-}
-
-.button-primary {
-  color: #78b78c;
-  border: 2px solid #78b78c;
-}
-
-.button-primary:hover {
-  color: #fff;
-  background-color: #78b78c;
-}
-
-.button-secondary {
-  color: #fff;
-  border: 2px solid #fff;
-}
-
-.button-secondary:hover {
-  color: #78b78c;
-  background-color: #fff;
-}
-
-.button-tertiary {
-  color: #fff;
-  background-color: #78b78c;
-  border: 2px solid #78b78c;
-}
-
-.button-tertiary:hover {
-  color: #78b78c;
-  background-color: #fff;
-}
-
-.button-medium {
-  padding: 15px 20px;
-}
+@import "variables";
+@import "buttons";
 
 /* styles reset */
 * {
@@ -67,6 +25,7 @@ h2 {
 }
 
 /* end of styles reset */
+
 .header {
   display: flex;
   justify-content: center;
@@ -83,23 +42,24 @@ h2 {
   font-size: 48px;
   font-weight: 500;
   line-height: 1.4;
-  color: #002324;
-}
-.header-title span {
-  color: #78b78c;
+  color: $color-text-title;
+
+  span {
+    color: $color-primary;
+  }
 }
 
 .about {
   position: relative;
   padding: 30px 0 120px;
-  color: #fff;
-  background-color: rgb(22, 21, 21);
+  color: $color-text-secondary;
+  background-color: $color-text-primary;
   clip-path: polygon(0 0%, 100% 0%, 100% 88%, 0 100%);
   margin-bottom: 30px;
 }
 
-@media (min-width: 992px) {
-  .about-content {
+.about-content {
+  @media (min-width: 992px) {
     display: flex;
     max-width: 960px;
     margin: 0 auto;
@@ -121,15 +81,16 @@ h2 {
 
 .projects-article {
   padding: 30px 15px;
-}
-.projects-article .button-primary {
-  margin-right: 15px;
-}
-.projects-article h3 {
-  font-weight: 500;
-}
-@media (min-width: 992px) {
-  .projects-article {
+
+  .button-primary {
+    margin-right: 15px;
+  }
+
+  h3 {
+    font-weight: 500;
+  }
+
+  @media (min-width: 992px) {
     display: flex;
     max-width: 960px;
     margin: 0 auto;
@@ -149,22 +110,24 @@ h2 {
 .contact {
   position: relative;
   padding: 80px 0px 100px;
-  color: #fff;
-  background-color: #78b78c;
-  clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+  color: $color-text-secondary;
+  background-color: $color-primary;
+  clip-path: polygon(0% 20%,100% 0%,100% 100%,0% 100%);
   margin-bottom: 30px;
 }
 
-.content-contact {
+.content-contact{
   text-align: center;
   padding: 20px 85px;
   font-size: 16px;
   line-height: 28px;
+
 }
 
 .footer {
   text-align: center;
   padding: 50px;
+
 }
 
 .social-item {
@@ -197,5 +160,3 @@ h2 {
 .facebook {
   background-image: url(../../assets/icons/icon-facebook.png);
 }
-
-/*# sourceMappingURL=index.css.map */
